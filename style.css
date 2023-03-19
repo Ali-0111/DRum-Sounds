@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+svg {
+    pointer-events: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    min-height: 100vh;
+    border: 1px solid orange;
+    flex-direction: column;
+}
+
+.controls {
+    height: 5rem;
+    width: 40%;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+.boxes {
+    cursor: pointer;
+}
+.select,
+  button {
+    margin: 0 1rem  ;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.pad {
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+}
+
+.g1 {
+    background-color: rgb(110, 211, 224);
+}
+
+.g1.active {
+    background-color: rgb(32, 113, 124);
+}
+
+.g2 {
+    background-color: rgb(156, 127, 238);
+}
+
+.g2.active {
+    background-color: rgb(84, 58, 156);
+}
+
+.g3 {
+    background-color: rgb(209, 109, 223);
+}
+
+.g3.active {
+    background-color: rgb(126, 49, 136);
+}
+
+.play {
+    border: none;
+    padding: 1rem 2rem;
+    margin-top: 2rem;  
+}
+
+.trimmer {
+    -webkit-appearance: none;
+    background: gray;
+    margin: 1rem 0.2rem;
+    cursor: pointer;
+    padding: 0.1rem;
+    width: 15rem;
+    border-radius: 1rem;
+}
+
+.speed {
+    flex-direction: column;
+}
+
+.speed p,
+span {
+    font-size: 1.3rem;
+}
+
+.mute.muted {
+    background-color: rgb(95, 8, 76);
+}
+
+.muted svg {
+    fill: white;    
+}
+/* // animation for indexed boxes  */
+@keyframes zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.3);
+    }
+
+}
